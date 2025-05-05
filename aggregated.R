@@ -14,7 +14,7 @@ seasons <- 2015:2024
 
 # 4. Function to Fetch and Summarize Player Game Logs per Season
 get_season_stats <- function(season_year) {
-  message("📊 Processing season: ", season_year)
+  message("Processing season: ", season_year)
   
   logs <- game_logs(seasons = season_year, result_types = "player")
   
