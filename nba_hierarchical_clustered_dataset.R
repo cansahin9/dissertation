@@ -58,7 +58,6 @@ final_clustered_data <- final_data %>%
 write_csv(final_clustered_data, "nba_clustered_dataset_2015_2024.csv")
 
 # 6. Hierarchical Clustering (Ward's Method on PCA Space)
-
 # Step 1: Distance matrix (Euclidean)
 dist_matrix <- dist(pca_vars_5d, method = "euclidean")
 
