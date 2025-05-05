@@ -11,7 +11,7 @@ team_df   <- read_csv("path/Final_Team_Net_Rating_Dataset.csv")
 player_df <- player_df %>%
   mutate(Season = paste0(substr(yearSeason - 1, 3, 4), "-", substr(yearSeason, 3, 4)))
 
-# 🏷️ 4. Define Lookup Table: Team Abbreviation to Full Team Name
+# 4. Define Lookup Table: Team Abbreviation to Full Team Name
 team_abbrev_to_name <- c(
   ATL = "Atlanta Hawks",        BOS = "Boston Celtics",     BRK = "Brooklyn Nets",
   CHI = "Chicago Bulls",        CHO = "Charlotte Hornets",  CLE = "Cleveland Cavaliers",
@@ -33,6 +33,3 @@ merged_df <- left_join(player_df, team_df, by = c("Team", "Season"))
 
 # 7. Save Merged Dataset
 write_csv(merged_df, "Merged_Player_Team_Data.csv")
-
-# 8. (Optional) Preview Output
-print(head(merged_df))
