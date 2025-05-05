@@ -59,7 +59,7 @@ final_data_mapped_updated <- read_csv("path/nba_position_specific_clusters_updat
 
 # 8. Function to Summarize Each Cluster by Group Type
 summarize_clusters <- function(data, group_name) {
-  cat("\n\n📌 Cluster Summaries for:", group_name, "\n")
+  cat("\n\n Cluster Summaries for:", group_name, "\n")
   
   summary <- data %>%
     filter(Position_Group == group_name) %>%
