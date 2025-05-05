@@ -56,7 +56,6 @@ final_clustered_data <- final_data %>%
 
 # Save final clustered dataset
 write_csv(final_clustered_data, "nba_clustered_dataset_2015_2024.csv")
-message("✅ K-Means clustering complete! Dataset saved.")
 
 # 6. Hierarchical Clustering (Ward's Method on PCA Space)
 
