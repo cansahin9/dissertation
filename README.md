@@ -1,8 +1,6 @@
 NBA Archetypes & Team Performance (2015–2024)
 ---
 
-Overview
----
 This project identifies NBA player archetypes via clustering and uses them to predict team Net Rating with machine learning. Built using 10 seasons of player/team data.
 
 Highlights
